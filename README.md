@@ -7,12 +7,12 @@ Our application is a personalized financial planning and projection system throu
 
 ### We will need to find related repository code centering on:
 
-[ ] Login/Logout Info return
-[ ] Saving User Data Input return
-[X] Budgeting return
-[X] Reminders return
-[ ] Projections return
-[ ] Math/Calculations
+[ ] Login/Logout Info  
+[ ] Saving User Data Input  
+[X] Budgeting  
+[X] Reminders  
+[ ] Projections  
+[ ] Math/Calculations  
 
 Each of these aspects will lend themselves to the final product of the processes of our application. 
 
@@ -22,21 +22,21 @@ Each of these aspects will lend themselves to the final product of the processes
 
 Katie --
 
- [X] Set up README return
- [X] Find at least 1 related repository & add to our project return
- [ ] Find Saving User Data Input related repository return
- [ ] Make edits to new repositories return
- [ ] Report any issues encountered, progress made return
- [ ] Develop at least half a page of code writing/edits in personal repository
+ [X] Set up README  
+ [X] Find at least 1 related repository & add to our project  
+ [ ] Find Saving User Data Input related repository  
+ [ ] Make edits to new repositories  
+ [ ] Report any issues encountered, progress made  
+ [ ] Develop at least half a page of code writing/edits in personal repository  
 
 Ryan --
 
- [X] Set up License return
- [X] Find at least 1 related repository & add to our project return
- [ ] Find Projection related repository return
- [ ] Make edits to new repositories return
- [ ] Report any issues encountered, progress made return
- [ ] Develop at least half a page of code writing/edits in personal repository return
+ [X] Set up License  
+ [X] Find at least 1 related repository & add to our project  
+ [ ] Find Projection related repository  
+ [ ] Make edits to new repositories  
+ [ ] Report any issues encountered, progress made  
+ [ ] Develop at least half a page of code writing/edits in personal repository  
  
  * add new tasks to the Road Map as needed* :speech_balloon: 
 
