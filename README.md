@@ -7,11 +7,11 @@ Our application is a personalized financial planning and projection system throu
 
 ### We will need to find related repository code centering on:
 
-[ ] Login/Logout Info
-[ ] Saving User Data Input
-[X] Budgeting
-[X] Reminders
-[ ] Projections
+[ ] Login/Logout Info \n
+[ ] Saving User Data Input \n
+[X] Budgeting \n
+[X] Reminders \n
+[ ] Projections \n
 [ ] Math/Calculations
 
 Each of these aspects will lend themselves to the final product of the processes of our application. 
@@ -22,21 +22,21 @@ Each of these aspects will lend themselves to the final product of the processes
 
 Katie --
 
- [X] Set up README
- [X] Find at least 1 related repository & add to our project
- [ ] Find Saving User Data Input related repository
- [ ] Make edits to new repositories
- [ ] Report any issues encountered, progress made
+ [X] Set up README \n
+ [X] Find at least 1 related repository & add to our project \n
+ [ ] Find Saving User Data Input related repository \n
+ [ ] Make edits to new repositories \n
+ [ ] Report any issues encountered, progress made \n
  [ ] Develop at least half a page of code writing/edits in personal repository
 
 Ryan --
 
- [X] Set up License
- [X] Find at least 1 related repository & add to our project
- [ ] Find Projection related repository
- [ ] Make edits to new repositories 
- [ ] Report any issues encountered, progress made
- [ ] Develop at least half a page of code writing/edits in personal repository
+ [X] Set up License \n
+ [X] Find at least 1 related repository & add to our project \n
+ [ ] Find Projection related repository \n
+ [ ] Make edits to new repositories \n
+ [ ] Report any issues encountered, progress made \n
+ [ ] Develop at least half a page of code writing/edits in personal repository \n
  
  * add new tasks to the Road Map as needed* :speech_balloon: 
 
