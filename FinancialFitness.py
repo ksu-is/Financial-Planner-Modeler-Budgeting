@@ -1,5 +1,7 @@
 
 #Some code borrowed from Katie Musso.
+#Some code borrowed from Tristan Endreo.
+#
 
 
 currentBudget = 0
