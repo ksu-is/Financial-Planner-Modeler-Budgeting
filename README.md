@@ -51,7 +51,7 @@ Our application will be used and presented during our class presentation at the 
 * [Jupyter Notebooks]() - coding site
 * [https://github.com/ksu-is/Budgeting]() - Budgeting code
 * [https://github.com/ammarbinfaisal/remind-me]() - Reminder code
-* []https://github.com/EndreoT/ClientReactivation() - Notification code
+* [https://github.com/EndreoT/ClientReactivation]() - Notification code
 
 
 
