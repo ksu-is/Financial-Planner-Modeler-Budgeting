@@ -5,7 +5,7 @@
 
 
 currentBudget = 0
-
+savedBudget = 0
 def main():
     print('Hello and welcome to your budget calculator!')
     print("Please be sure to enter your revenue first.")
@@ -17,7 +17,8 @@ def main():
         print('1 - Add your Revenue: ')
         print('2 - Add Expenses: ')
         print('3 - Check Budget Balance: ')
-        print('4 - Exit without saving!')
+        print('4 - Save Current Budget: ')
+        print('5 - Exit without saving!')
         print()
         choice = int(input('Please enter your selection: '))
         if choice == 1:
@@ -29,7 +30,7 @@ def main():
         elif choice == 3:
             print()
             print('Your balance is {0}'.format(totalBudget))
-        elif choice == 4:
+        elif choice == 5:
             print()
             endProgram = 'yes'
             print('Thank you for using "Small budget" program, Goodbye!')
@@ -44,10 +45,10 @@ def addExpense(totalBudget):
     totalExpense = expense * timesPerMonth
     if totalBudget - totalExpense >= 0:
         totalBudget = totalBudget - totalExpense
-        print ('The expenses was accepted, your remaining budget is: ${0}'.format(totalBudget))
+        print ('The expenses were accepted, your remaining budget is: ${0}'.format(totalBudget))
         return totalBudget
     else:
-        print ('The expenses was rejected because the budget exceeded.')
+        print ('The expenses were rejected because the budget exceeded.')
         return totalBudget
 
 
@@ -58,5 +59,8 @@ def addRevenue(totalBudget):
     print('Your new budget is: ${0}'.format(totalBudget))
     print()
     return totalBudget
+              
+              
+def saveBudget():
 
 main()
