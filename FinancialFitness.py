@@ -32,7 +32,10 @@ def main():
             print('Your balance is {0}'.format(totalBudget))
         elif choice == 4:
             print()
-            saveBudget()
+            userChoice = input("Are you sure you want to save? This will overwrite previously saved data: Y or N")
+            if userChoice.upper() == 'Y':
+                savedBudget = totalBudget
+                print("Budget saved:", savedBudget)
         elif choice == 5:
             print()
             endProgram = 'yes'
@@ -62,11 +65,5 @@ def addRevenue(totalBudget):
     print('Your new budget is: ${0}'.format(totalBudget))
     print()
     return totalBudget
-              
-              
-def saveBudget():
-    user_choice = input("Are you sure you want to save this budget? This will overwrite any previously saved budgets: Y or N")
-    if user_choice.upper() == 'Y':
-        savedBudget == currentBudget
-        print("Budget has been saved.")
+
 main()
