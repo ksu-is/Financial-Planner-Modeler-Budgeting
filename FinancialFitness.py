@@ -7,7 +7,7 @@
 currentBudget = 0
 savedBudget = 0
 def main():
-    print('Hello and welcome to your budget calculator!')
+    print('Hello and welcome to Financial Fitness!')
     print("Please be sure to enter your revenue first.")
     endProgram = 'no'
     totalBudget = currentBudget
@@ -36,10 +36,12 @@ def main():
             if userChoice.upper() == 'Y':
                 savedBudget = totalBudget
                 print("Budget saved:", savedBudget)
+            elif userChoice.upper() == 'N':
+                print("Budget not saved.")
         elif choice == 5:
             print()
             endProgram = 'yes'
-            print('Thank you for using "Small budget" program, Goodbye!')
+            print('Thank you for using Financial Fitness, Goodbye!')
         else:
             print('Invalid selection, please try again')
 
