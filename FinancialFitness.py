@@ -7,16 +7,7 @@
 currentBudget = 0
 savedBudget = 0
 def main():
-    username = ""
-    password = ""
-    if username == "":
-        user_username = input("Please create a username that you would like to use to log into FinancialFitness:")
-        username = user_username
-        print("New username is:", username)
-    if password == "":
-        user_password = input("Please create a password that you would like to use to log into FinancialFitness:")
-        password = user_password
-        print("New password is:", password)
+    create_login()
     print('Hello and welcome to Financial Fitness!')
     print("Please be sure to enter your revenue first.")
     endProgram = 'no'
@@ -56,9 +47,18 @@ def main():
             print('Invalid selection, please try again.')
         elif choice > 5:
             print("Invalid selection, please try again.")
-
-
-
+def create_login():
+    username = ""
+    password = ""
+    if username == "":
+        user_username = input("Please create a username that you would like to use to log into FinancialFitness:")
+        username = user_username
+        print("New username is:", username)
+    if password == "":
+        user_password = input("Please create a password that you would like to use to log into FinancialFitness:")
+        password = user_password
+        print("New password is:", password)
+  
 def addExpense(totalBudget):
     expense = float(input('Enter your expense amount: $'))
     timesPerMonth = int(input('How many times per month: '))
