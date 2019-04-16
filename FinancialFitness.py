@@ -30,7 +30,7 @@ def main():
         print('4 - Save Current Budget: ')
         print('5 - Exit without saving!')
         print()
-        choice = int(input('Please enter your selection: '))
+        choice = input('Please enter your selection: ')
         if choice == 1:
             print()
             totalBudget = addRevenue(totalBudget)
@@ -52,8 +52,10 @@ def main():
             print()
             endProgram = 'yes'
             print('Thank you for using Financial Fitness, Goodbye!')
-        else:
-            print('Invalid selection, please try again')
+        elif choice.isalpha():
+            print('Invalid selection, please try again.')
+        elif choice > 5:
+            print("Invalid selection, please try again.")
 
 
 
