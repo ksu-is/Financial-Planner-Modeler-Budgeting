@@ -7,8 +7,8 @@ Our application is a personalized financial planning and projection system throu
 
 ### We will need to find related repository code centering on:
 
-[ ] Login/Logout Info  
-[ ] Saving User Data Input  
+[X] Login/Logout Info  
+[X] Saving User Data Input  
 [X] Budgeting  
 [X] Reminders  
 [ ] Projections  
@@ -25,7 +25,7 @@ Katie --
 
  [X] Set up README  
  [X] Find at least 1 related repository & add to our project  
- [ ] Find Saving User Data Input related repository  
+ [X] Find Saving User Data Input related repository  
  [ ] Make edits to new repositories  
  [ ] Report any issues encountered, progress made  
  [ ] Develop at least half a page of code writing/edits in personal repository  
@@ -54,6 +54,6 @@ Our application will be used and presented during our class presentation at the 
 * [https://github.com/ammarbinfaisal/remind-me]() - Reminder code
 * [https://github.com/EndreoT/ClientReactivation]() - Notification code
 * [https://github.com/EngaveAnna/LogIn_Register]() - User Registration code
-
+* [https://github.com/jolopots/lazada_scraper]() - Saving User Data code
 
 
