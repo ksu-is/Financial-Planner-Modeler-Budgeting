@@ -13,6 +13,7 @@ Our application is a personalized financial planning and projection system throu
 [X] Reminders  
 [ ] Projections  
 [ ] Math/Calculations  
+[ ] User Interface/Graphic Design 
 
 Each of these aspects will lend themselves to the final product of the processes of our application. 
 
