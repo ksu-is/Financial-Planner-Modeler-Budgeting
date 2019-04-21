@@ -22,16 +22,16 @@ def main():
         print('5 - Exit without saving!')
         print()
         choice = input('Please enter your selection: ')
-        if choice == 1:
+        if choice == '1':
             print()
             totalBudget = addRevenue(totalBudget)
-        elif choice == 2:
+        elif choice == '2':
             print()
             totalBudget = addExpense(totalBudget)
-        elif choice == 3:
+        elif choice == '3':
             print()
             print('Your balance is {0}'.format(totalBudget))
-        elif choice == 4:
+        elif choice == '4':
             print()
             userChoice = input("Are you sure you want to save? This will overwrite previously saved data: Y or N")
             if userChoice.upper() == 'Y':
@@ -39,13 +39,13 @@ def main():
                 print("Budget saved:", savedBudget)
             elif userChoice.upper() == 'N':
                 print("Budget not saved.")
-        elif choice == 5:
+        elif choice == '5':
             print()
             endProgram = 'yes'
             print('Thank you for using Financial Fitness, Goodbye!')
         elif choice.isalpha():
             print('Invalid selection, please try again.')
-        elif choice > 5:
+        elif choice > '5':
             print("Invalid selection, please try again.")
 def create_login():
     username = ""
