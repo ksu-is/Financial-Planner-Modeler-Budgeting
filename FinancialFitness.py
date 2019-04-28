@@ -1,19 +1,16 @@
 
-#Some code borrowed from Katie Musso.
-#Some code borrowed from Tristan Endreo.
-#Some code borrowed from Ammar.
-
+#Some code borrowed from Ivaylo Spasov.
 import pickle
 
 currentBudget = 0
-
+   
 def main():
-    create_login()
-    print('Hello and welcome to Financial Fitness!')
+    print('Hello and welcome to your budget calculator!')
     print("Please be sure to enter your revenue first.")
     print("If you have not created a profile, please create one!")
     endProgram = 'no'
     totalBudget = currentBudget
+    
     while endProgram == 'no':
         print()
         print('Menu Selections: ')
@@ -26,6 +23,7 @@ def main():
         print('7 - Save Current Budget: ')
         print('8 - Exit Financial Fitness!')
         print()
+        
         choice = input('Please enter your selection: ')
         if choice == '1':
             print()
@@ -35,22 +33,34 @@ def main():
             profile_dict[1] = profile_name
             print(profile_dict[1])
 
-            pickle_out = open("profile.pickle", "wb")
+            pickle_out = open(profile_name + ".pickle", "wb")
             pickle.dump(profile_dict, pickle_out)
+            pickle_out.close()
             #pickle_out.close()
             #create_profile()
-
-        elif choice == '2':
-            pickle_in = open("profile.pickle", "rb")
-            example_dict = pickle.load(pickle_in)
             
-            print(example_dict[1], example_dict[2])
+        elif choice == '2':
+            profile_load = input("Please enter the name of the profile you would like to open:")
+            try:
+                
+                pickle_in = open(profile_load + ".pickle", "rb")
+                example_dict = pickle.load(pickle_in)
+                pickle_in.close()
+
+                print(example_dict)
+            
+                print(example_dict[1])
+                print(example_dict[2])
+            except:
+                print("That profile does not exist. Please create a profile with that name.")
+                #return 0
+            
             #example_dict = pickle.load(pickle_in)
             
         elif choice == '3':
             print()
             totalBudget = addRevenue(totalBudget)
-    
+            
         elif choice == '4':
             print()
             totalBudget = addExpense(totalBudget)
@@ -66,13 +76,16 @@ def main():
             print()
             userChoice = input("Are you sure you want to save? This will overwrite previously saved data: Y or N")
             if userChoice.upper() == 'Y':
+                pickle_out7 = open(profile_dict[1] + ".pickle", "wb")
                 profile_dict[2] = totalBudget
+                pickle.dump(profile_dict, pickle_out7)
+                pickle_out7.close()
+                
                 print("Budget saved:", profile_dict[2])
                 
         elif choice == '8':
             print()
             endProgram = 'yes'
-            pickle_out.close()
             print('Thank you for using Financial Fitness, Goodbye!')
             
         elif choice.isalpha():
@@ -80,19 +93,41 @@ def main():
             
         elif choice > '8':
             print("Invalid selection, please try again.")
+            
+def create_profile():
+    profile_dict = {1:"", 2:"0"}
 
-def create_login():
-    username = ""
-    password = ""
-    if username == "":
-        user_username = input("Please create a username that you would like to use to log into FinancialFitness:")
-        username = user_username
-        print("New username is:", username)
-    if password == "":
-        user_password = input("Please create a password that you would like to use to log into FinancialFitness:")
-        password = user_password
-        print("New password is:", password)
-  
+    profile_name = input("Please enter a profile name you would like to use:")
+    profile_dict[1] = profile_name
+    print(profile_dict[1])
+    
+    pickle_out = open("profile.pickle", "wb")
+    pickle.dump(profile_dict, pickle_out)
+    del pickle_out
+    #if profileName == "":
+        #user_profileName = input("Please create a profile name that you would like to use for your FinancialFitness profile: ")
+        #profileName = user_profileName
+        #print("New profile name is:", profileName)
+    
+def login():
+    login = 'no'
+    while login == 'no':
+        if username != "":
+            login_username = input("Please enter your username:")
+            if login_username == username:
+                print("Correct username entered.")
+                print()
+                if password != "":
+                    login_password = input("Please enter your password:")
+                    if login_password == password:
+                        print("Correct username entered.")
+                        login = 'yes'
+            else:
+                print("Incorrect username entered.")
+            
+        
+            
+
 def addExpense(totalBudget):
     expense = float(input('Enter your expense amount: $'))
     timesPerMonth = int(input('How many times per month: '))
@@ -113,5 +148,4 @@ def addRevenue(totalBudget):
     print('Your new budget is: ${0}'.format(totalBudget))
     print()
     return totalBudget
-
 main()
