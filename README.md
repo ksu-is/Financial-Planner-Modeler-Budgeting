@@ -12,7 +12,7 @@ Our application is a personalized financial planning and projection system throu
 [X] Budgeting  
 [X] Reminders  
 [ ] Projections  
-[ ] Math/Calculations  
+[X] Math/Calculations  
 [ ] User Interface/Graphic Design 
 
 Each of these aspects will lend themselves to the final product of the processes of our application. 
@@ -27,7 +27,7 @@ Katie --
  [X] Find at least 1 related repository & add to our project  
  [X] Find Saving User Data Input related repository  
  [ ] Make edits to new repositories  
- [ ] Report any issues encountered, progress made  
+ [X] Report any issues encountered, progress made  
  [ ] Develop at least half a page of code writing/edits in personal repository  
 
 Ryan --
@@ -36,8 +36,8 @@ Ryan --
  [X] Find at least 1 related repository & add to our project  
  [ ] Find Projection related repository  
  [ ] Make edits to new repositories  
- [ ] Report any issues encountered, progress made  
- [ ] Develop at least half a page of code writing/edits in personal repository  
+ [X] Report any issues encountered, progress made  
+ [X] Develop at least half a page of code writing/edits in personal repository  
  
  * add new tasks to the Road Map as needed* :speech_balloon: 
 
