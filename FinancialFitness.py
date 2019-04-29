@@ -10,11 +10,13 @@ def main():
     print("If you have not created a profile, please create one!")
     endProgram = 'no'
     totalBudget = currentBudget
-    
+    profile_name = ""
+    profile_dict = {1:"", 2:""}
     while endProgram == 'no':
         print()
+        print("Profile: " + profile_name)
         print('Menu Selections: ')
-        print('1 - Create a profile (This will overwrite your previous profile name): ')
+        print('1 - Create a profile: ')
         print('2 - Open your profile: ')
         print('3 - Add your Revenue: ')
         print('4 - Add Expenses: ')
@@ -41,6 +43,7 @@ def main():
             
         elif choice == '2':
             profile_load = input("Please enter the name of the profile you would like to open:")
+            profile_name = profile_load
             try:
                 
                 pickle_in = open(profile_load + ".pickle", "rb")
@@ -68,15 +71,21 @@ def main():
         elif choice == '5':
             print()
             print('Your balance is {0}'.format(totalBudget))
+            
         elif choice == '6':
             print()
+            print("Profile", profile_dict)
+            print("Profile name", profile_name)
             print('Saved budget balance is {0}'.format(profile_dict[2]))
             
         elif choice == '7':
             print()
-            userChoice = input("Are you sure you want to save? This will overwrite previously saved data: Y or N")
+            if not profile_name:
+                profile_name = input("Please enter a profile name you would like to save to:")
+            userChoice = input("Are you sure you want to save " + profile_name + "? This will overwrite previously saved data: Y or N")
             if userChoice.upper() == 'Y':
-                pickle_out7 = open(profile_dict[1] + ".pickle", "wb")
+                pickle_out7 = open(profile_name + ".pickle", "wb")
+                profile_dict[1] = profile_name
                 profile_dict[2] = totalBudget
                 pickle.dump(profile_dict, pickle_out7)
                 pickle_out7.close()
